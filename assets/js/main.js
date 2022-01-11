@@ -501,8 +501,4 @@ tsParticles.load("tsparticles", {
     }
   }
 });
-
-  
-  Resources
-
 })()
