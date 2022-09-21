@@ -3365,6 +3365,7 @@
             withCallback: function withCallback(e, target) {
               if (!_this7.preventOutsideClick && !hasClass(document.body, 'glightbox-mobile') && !closest(e.target, '.ginner-container')) {
                 if (!closest(e.target, '.gbtn') && !hasClass(e.target, 'gnext') && !hasClass(e.target, 'gprev')) {
+                  document.getElementById("promo_video").pause();
                   _this7.close();
                 }
               }
