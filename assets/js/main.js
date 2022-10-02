@@ -517,12 +517,12 @@ emailjs.send("service_mwvejg5", "template_mo4vbzk", {
     "CV_message": contactForm.message.value
 })
 .then(function(response) {
-    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
 
     const alert = (message, type) => {
                 const wrapper = document.createElement('div')
                 wrapper.innerHTML = [
-                    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                    `<div id="alert1" class="alert alert-${type} alert-dismissible" role="alert">`,
                     `   <div>${message}</div>`,
                     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
                     '</div>'
