@@ -8,7 +8,14 @@ body {
   position: relative;
   background: transparent;
   z-index: -1;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -22,6 +29,7 @@ body::before {
   justify-content: center;
   align-items: center;
 }
+
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;

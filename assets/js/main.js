@@ -153,35 +153,6 @@
       }
     })
   }
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
-  });
   
   /**
    * Hero type effect
@@ -542,3 +513,172 @@ emailjs.send("service_mwvejg5", "template_mo4vbzk", {
     console.log('FAILED...', error);
  });
 }
+
+var language; 
+  function getLanguage() {
+    //(localStorage.getItem('language') == 'pt') ? setLanguage('en') : setLanguage('pt');
+      $.ajax({ 
+        url:  '/language/' +  localStorage.getItem('language') + '.json', 
+        dataType: 'json', async: false, dataType: 'json', 
+        success: function (lang) { language = lang } });
+  }
+
+  function setLanguage(lang) {
+    localStorage.setItem('language', lang);
+}
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    getLanguage();
+    var html1 = "<h2> " + language.intro + "<span id='intro1'> " + language.intro1 +" </span> " + language.intro0 + "</h2>";
+    document.getElementById('intro1').innerHTML = html1;
+    //var html2 = language.intro2 + "<span class='typed' data-typed-items='" + language.intro3 +"'></span>"
+    //document.getElementById('intro2').innerHTML = html2;
+    document.getElementById("navLanguage").textContent = language.nav.navLanguage;
+    document.getElementById("navLanguage").setAttribute('onclick', language.nav.navLanguageBtn);
+    document.getElementById("navHome").textContent = language.nav.navHome;
+    document.getElementById("navAbout").textContent = language.nav.navAbout;
+    document.getElementById("navResume").textContent = language.nav.navResume;
+    document.getElementById("navServices").textContent = language.nav.navServices;
+    document.getElementById("navPortfolio").textContent = language.nav.navPortfolio;
+    document.getElementById("navContact").textContent = language.nav.navContact;
+
+    //About
+    document.getElementById("aboutTitle1").textContent = language.about.aboutTitle1;
+    document.getElementById("aboutTitle2").textContent = language.about.aboutTitle2;
+    document.getElementById("aboutText1").textContent = language.about.aboutText1;
+    document.getElementById("birthday").textContent = language.about.birthday;
+    document.getElementById("website").textContent = language.about.website;
+    document.getElementById("phone").textContent = language.about.phone;
+    document.getElementById("city").textContent = language.about.city;
+    document.getElementById("age").textContent = language.about.age;
+    document.getElementById("degree").textContent = language.about.degree;
+    document.getElementById("email1").textContent = language.about.email;
+    document.getElementById("freelance").textContent = language.about.freelance;
+    document.getElementById("aboutText2").textContent = language.about.aboutText1;
+    document.getElementById("countProcess").textContent = language.about.counts.countProcess;
+    document.getElementById("countProjects").textContent = language.about.counts.countProjects;
+    document.getElementById("countHoursSupport").textContent = language.about.counts.countHoursSupport;
+    document.getElementById("countHoursCoding").textContent = language.about.counts.countHoursCoding;
+    document.getElementById("aboutSkills").textContent = language.about.aboutSkills;
+    document.getElementById("interestsTitle").textContent = language.about.interestsTitle;
+    document.getElementById("interest1").textContent = language.about.interests.interest1;
+    document.getElementById("interest2").textContent = language.about.interests.interest2;
+    document.getElementById("interest3").textContent = language.about.interests.interest3;
+    document.getElementById("interest4").textContent = language.about.interests.interest4;
+    document.getElementById("interest5").textContent = language.about.interests.interest5;
+    document.getElementById("interest6").textContent = language.about.interests.interest6;
+    document.getElementById("interest7").textContent = language.about.interests.interest7;
+    document.getElementById("interest8").textContent = language.about.interests.interest8;
+    document.getElementById("interest9").textContent = language.about.interests.interest9;
+    document.getElementById("interest10").textContent = language.about.interests.interest10;
+    document.getElementById("interest11").textContent = language.about.interests.interest11;
+    document.getElementById("interest12").textContent = language.about.interests.interest12;
+
+    //Resume
+    document.getElementById("resumeTitle").textContent = language.resume.resumeTitle;
+    document.getElementById("resumeTitle0").textContent = language.resume.resumeTitle0;
+    document.getElementById("resumeTitle1").textContent = language.resume.resumeTitle1;
+    document.getElementById("resumeSummary").textContent = language.resume.resumeSummary;
+    document.getElementById("resumeTitle2").textContent = language.resume.resumeTitle2;
+    document.getElementById("resumeEduItem1Title").textContent = language.resume.resumeEduItem1.resumeEduItem1Title;
+    document.getElementById("resumeEduItem1Date").textContent = language.resume.resumeEduItem1.resumeEduItem1Date;
+    document.getElementById("resumeEduItem1Local").textContent = language.resume.resumeEduItem1.resumeEduItem1Local;
+    document.getElementById("resumeEduItem1Desc").textContent = language.resume.resumeEduItem1.resumeEduItem1Desc;
+    document.getElementById("resumeEduItem2Title").textContent = language.resume.resumeEduItem2.resumeEduItem2Title;
+    document.getElementById("resumeEduItem2Date").textContent = language.resume.resumeEduItem2.resumeEduItem2Date;
+    document.getElementById("resumeEduItem2Local").textContent = language.resume.resumeEduItem2.resumeEduItem2Local;
+    document.getElementById("resumeEduItem2Desc").textContent = language.resume.resumeEduItem2.resumeEduItem2Desc;
+    document.getElementById("resumeEduItem3Title").textContent = language.resume.resumeEduItem3.resumeEduItem3Title;
+    document.getElementById("resumeEduItem3Date").textContent = language.resume.resumeEduItem3.resumeEduItem3Date;
+    document.getElementById("resumeEduItem3Local").textContent = language.resume.resumeEduItem3.resumeEduItem3Local;
+    document.getElementById("resumeEduItem3Desc").textContent = language.resume.resumeEduItem3.resumeEduItem3Desc;
+    document.getElementById("resumeEduItem4Title").textContent = language.resume.resumeEduItem4.resumeEduItem4Title;
+    document.getElementById("resumeEduItem4Date").textContent = language.resume.resumeEduItem4.resumeEduItem4Date;
+    document.getElementById("resumeEduItem4Local").textContent = language.resume.resumeEduItem4.resumeEduItem4Local;
+    document.getElementById("resumeEduItem4Desc").textContent = language.resume.resumeEduItem4.resumeEduItem4Desc;
+    document.getElementById("resumeTitle3").textContent = language.resume.resumeTitle3;
+    document.getElementById("resumeProfItem1Title").textContent = language.resume.resumeProfItem1.resumeProfItem1Title;
+    document.getElementById("resumeProfItem1Date").textContent = language.resume.resumeProfItem1.resumeProfItem1Date;
+    document.getElementById("resumeProfItem1Local").textContent = language.resume.resumeProfItem1.resumeProfItem1Local;
+    document.getElementById("resumeProfItem1Desc1").textContent = language.resume.resumeProfItem1.resumeProfItem1Desc.resumeProfItem1Desc1;
+    document.getElementById("resumeProfItem1Desc2").textContent = language.resume.resumeProfItem1.resumeProfItem1Desc.resumeProfItem1Desc2;
+    document.getElementById("resumeProfItem1Desc3").textContent = language.resume.resumeProfItem1.resumeProfItem1Desc.resumeProfItem1Desc3;
+    document.getElementById("resumeProfItem1Desc4").textContent = language.resume.resumeProfItem1.resumeProfItem1Desc.resumeProfItem1Desc4;
+    document.getElementById("resumeProfItem1Desc5").textContent = language.resume.resumeProfItem1.resumeProfItem1Desc.resumeProfItem1Desc5;
+    document.getElementById("resumeProfItem1Desc6").textContent = language.resume.resumeProfItem1.resumeProfItem1Desc.resumeProfItem1Desc6;
+    document.getElementById("resumeProfItem2Title").textContent = language.resume.resumeProfItem2.resumeProfItem2Title;
+    document.getElementById("resumeProfItem2Date").textContent = language.resume.resumeProfItem2.resumeProfItem2Date;
+    document.getElementById("resumeProfItem2Local").textContent = language.resume.resumeProfItem2.resumeProfItem2Local;
+    document.getElementById("resumeProfItem2Desc1").textContent = language.resume.resumeProfItem2.resumeProfItem2Desc.resumeProfItem2Desc1;
+    document.getElementById("resumeProfItem2Desc2").textContent = language.resume.resumeProfItem2.resumeProfItem2Desc.resumeProfItem2Desc2;
+    document.getElementById("resumeProfItem2Desc3").textContent = language.resume.resumeProfItem2.resumeProfItem2Desc.resumeProfItem2Desc3;
+
+    //services
+    document.getElementById("servicesTitle").textContent = language.services.servicesTitle;
+    document.getElementById("servicesTitle1").textContent = language.services.servicesTitle1;
+    document.getElementById("service1Title").textContent = language.services.services1.service1Title;
+    document.getElementById("service1Description").textContent = language.services.services1.service1Description;
+    document.getElementById("service2Title").textContent = language.services.services2.service2Title;
+    document.getElementById("service3Title").textContent = language.services.services3.service3Title;
+    document.getElementById("service3Description").textContent = language.services.services3.service3Description;
+    document.getElementById("service4Title").textContent = language.services.services4.service4Title;
+    document.getElementById("service4Description").textContent = language.services.services4.service4Description;
+    document.getElementById("service4Title").textContent = language.services.services4.service4Title;
+    document.getElementById("service4Description").textContent = language.services.services4.service4Description;
+    document.getElementById("service5Title").textContent = language.services.services5.service5Title;
+    document.getElementById("service5Description").textContent = language.services.services5.service5Description;
+    document.getElementById("service6Title").textContent = language.services.services6.service6Title;
+    document.getElementById("service6Description").textContent = language.services.services6.service6Description;
+
+    //portfolio
+    document.getElementById("portfolioTitle1").textContent = language.portfolio.portfolioTitle1;
+    document.getElementById("portfolioTitle2").textContent = language.portfolio.portfolioTitle2;
+    document.getElementById("filter1").textContent = language.portfolio.filters.filter1;
+    document.getElementById("filter2").textContent = language.portfolio.filters.filter2;
+    document.getElementById("filter3").textContent = language.portfolio.filters.filter3;
+    document.getElementById("filter4").textContent = language.portfolio.filters.filter4;
+    document.getElementById("portfolio1Title").textContent = language.portfolio.portfolio1.portfolio1Title;
+    document.getElementById("portfolio1Desc").textContent = language.portfolio.portfolio1.portfolio1Desc;
+    document.getElementById("portfolio2Title").textContent = language.portfolio.portfolio2.portfolio2Title;
+    document.getElementById("portfolio2Desc").textContent = language.portfolio.portfolio2.portfolio2Desc;
+    document.getElementById("portfolio3Title").textContent = language.portfolio.portfolio3.portfolio3Title;
+    document.getElementById("portfolio3Desc").textContent = language.portfolio.portfolio3.portfolio3Desc;
+    document.getElementById("portfolio4Title").textContent = language.portfolio.portfolio4.portfolio4Title;
+    document.getElementById("portfolio4Desc").textContent = language.portfolio.portfolio4.portfolio4Desc;
+    document.getElementById("portfolio5Title").textContent = language.portfolio.portfolio5.portfolio5Title;
+    document.getElementById("portfolio5Desc").textContent = language.portfolio.portfolio5.portfolio5Desc;
+    document.getElementById("portfolio6Title").textContent = language.portfolio.portfolio6.portfolio6Title;
+    document.getElementById("portfolio6Desc").textContent = language.portfolio.portfolio6.portfolio6Desc;
+    document.getElementById("portfolio7Title").textContent = language.portfolio.portfolio7.portfolio7Title;
+    document.getElementById("portfolio7Desc").textContent = language.portfolio.portfolio7.portfoli7Desc;
+    document.getElementById("portfolio8Title").textContent = language.portfolio.portfolio8.portfolio8Title;
+    document.getElementById("portfolio8Desc").textContent = language.portfolio.portfolio8.portfolio8Desc;
+    document.getElementById("portfolio9Title").textContent = language.portfolio.portfolio9.portfolio9Title;
+    document.getElementById("portfolio9Desc").textContent = language.portfolio.portfolio9.portfolio9Desc;
+
+    //portfolio1
+    document.getElementById("portfolio1Title1").textContent = language.portfolio.portfolio1.portfolio1Title1;
+    document.getElementById("portfolio1Title2").textContent = language.portfolio.portfolio1.portfolio1Title2;
+
+    var portfolio1 = "<li><strong>" + language.portfolio.portfolio1.portfolio1Category + "</strong>:" + language.portfolio.portfolio1.portfolio1CategoryValue + "</li>";
+    portfolio1 =+ "<li><strong>" + language.portfolio.portfolio1.portfolio1Client + "</strong>:" + language.portfolio.portfolio1.portfolio1ClientValue + "</li>";
+    portfolio1 =+ "<li><strong>" + language.portfolio.portfolio1.portfolio1ProjectDate + "</strong>:" + language.portfolio.portfolio1.portfolio1ProjectDateValue + "</li>";
+    portfolio1 =+ "<li><strong>" + language.portfolio.portfolio1.portfolio1ProjectUrl + "</strong>:" + language.portfolio.portfolio1.portfolio1ProjectUrlValue + "</li>";
+    document.getElementById('portfolioUl1').innerHTML = portfolio1;
+
+    //Contacts
+    document.getElementById("contactTitle1").textContent = language.contact.contactTitle1;
+    document.getElementById("contactTitle2").textContent = language.contact.contactTitle2;
+    document.getElementById("contactAdress1").textContent = language.contact.contactAdress1;
+    document.getElementById("contactAdress2").textContent = language.contact.contactAdress2;
+    document.getElementById("contactSocial").textContent = language.contact.contactSocial;
+    document.getElementById("contactEmail1").textContent = language.contact.contactEmail1;
+    document.getElementById("contactEmail2").textContent = language.contact.contactEmail2;
+    document.getElementById("contactPhone1").textContent = language.contact.contactPhone1;
+    document.getElementById("contactPhone2").textContent = language.contact.contactPhone2;
+    document.getElementById("name").placeholder = language.contact.form.name;
+    document.getElementById("email").placeholder = language.contact.form.email; 
+    document.getElementById("subject").placeholder = language.contact.form.subject;
+    document.getElementById("message").placeholder = language.contact.form.message;
+    document.getElementById("liveAlertBtn").textContent = language.contact.form.liveAlertBtn;
+});
