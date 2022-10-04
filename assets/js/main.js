@@ -518,7 +518,7 @@ var language;
   function getLanguage() {
     //(localStorage.getItem('language') == 'pt') ? setLanguage('en') : setLanguage('pt');
       $.ajax({ 
-        url:  '/language/' +  localStorage.getItem('language') + '.json', 
+        url:  '/CV/language/' +  localStorage.getItem('language') + '.json', 
         dataType: 'json', async: false, dataType: 'json', 
         success: function (lang) { language = lang } });
   }
