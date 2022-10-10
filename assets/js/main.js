@@ -516,9 +516,8 @@ emailjs.send("service_mwvejg5", "template_mo4vbzk", {
 
 var language; 
   function getLanguage() {
-    //(localStorage.getItem('language') == 'pt') ? setLanguage('en') : setLanguage('pt');
       $.ajax({ 
-        url:  '/CV/language/' +  localStorage.getItem('language') + '.json', 
+        url:  '/language/' +  localStorage.getItem('language') + '.json', 
         dataType: 'json', async: false, dataType: 'json', 
         success: function (lang) { language = lang } });
   }
@@ -528,6 +527,9 @@ var language;
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
+    if(localStorage.getItem('language') == null){
+      setLanguage('en');
+    }
     getLanguage();
     var html1 = "<h2> " + language.intro + "<span id='intro1'> " + language.intro1 +" </span> " + language.intro0 + "</h2>";
     document.getElementById('intro1').innerHTML = html1;
@@ -547,13 +549,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById("aboutTitle2").textContent = language.about.aboutTitle2;
     document.getElementById("aboutText1").textContent = language.about.aboutText1;
     document.getElementById("birthday").textContent = language.about.birthday;
+    document.getElementById("birthdayValue").textContent = language.about.birthdayValue;
     document.getElementById("website").textContent = language.about.website;
+    document.getElementById("websiteValue").textContent = language.about.websiteValue;
     document.getElementById("phone").textContent = language.about.phone;
+    document.getElementById("phoneValue").textContent = language.about.phoneValue;
     document.getElementById("city").textContent = language.about.city;
+    document.getElementById("cityValue").textContent = language.about.cityValue;
     document.getElementById("age").textContent = language.about.age;
+    document.getElementById("ageValue").textContent = language.about.ageValue;
     document.getElementById("degree").textContent = language.about.degree;
-    document.getElementById("email1").textContent = language.about.email;
+    document.getElementById("degreeValue").textContent = language.about.degreeValue;
+    document.getElementById("email1").textContent = language.about.email1;
+    document.getElementById("email1Value").textContent = language.about.email1Value;
     document.getElementById("freelance").textContent = language.about.freelance;
+    document.getElementById("freelanceValue").textContent = language.about.freelanceValue;
     document.getElementById("aboutText2").textContent = language.about.aboutText1;
     document.getElementById("countProcess").textContent = language.about.counts.countProcess;
     document.getElementById("countProjects").textContent = language.about.counts.countProjects;
@@ -619,6 +629,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById("service1Title").textContent = language.services.services1.service1Title;
     document.getElementById("service1Description").textContent = language.services.services1.service1Description;
     document.getElementById("service2Title").textContent = language.services.services2.service2Title;
+    document.getElementById("service2Description").textContent = language.services.services2.service2Description;
     document.getElementById("service3Title").textContent = language.services.services3.service3Title;
     document.getElementById("service3Description").textContent = language.services.services3.service3Description;
     document.getElementById("service4Title").textContent = language.services.services4.service4Title;
@@ -650,21 +661,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById("portfolio6Title").textContent = language.portfolio.portfolio6.portfolio6Title;
     document.getElementById("portfolio6Desc").textContent = language.portfolio.portfolio6.portfolio6Desc;
     document.getElementById("portfolio7Title").textContent = language.portfolio.portfolio7.portfolio7Title;
-    document.getElementById("portfolio7Desc").textContent = language.portfolio.portfolio7.portfoli7Desc;
+    document.getElementById("portfolio7Desc").textContent = language.portfolio.portfolio7.portfolio7Desc;
     document.getElementById("portfolio8Title").textContent = language.portfolio.portfolio8.portfolio8Title;
     document.getElementById("portfolio8Desc").textContent = language.portfolio.portfolio8.portfolio8Desc;
     document.getElementById("portfolio9Title").textContent = language.portfolio.portfolio9.portfolio9Title;
     document.getElementById("portfolio9Desc").textContent = language.portfolio.portfolio9.portfolio9Desc;
-
-    //portfolio1
-    document.getElementById("portfolio1Title1").textContent = language.portfolio.portfolio1.portfolio1Title1;
-    document.getElementById("portfolio1Title2").textContent = language.portfolio.portfolio1.portfolio1Title2;
-
-    var portfolio1 = "<li><strong>" + language.portfolio.portfolio1.portfolio1Category + "</strong>:" + language.portfolio.portfolio1.portfolio1CategoryValue + "</li>";
-    portfolio1 =+ "<li><strong>" + language.portfolio.portfolio1.portfolio1Client + "</strong>:" + language.portfolio.portfolio1.portfolio1ClientValue + "</li>";
-    portfolio1 =+ "<li><strong>" + language.portfolio.portfolio1.portfolio1ProjectDate + "</strong>:" + language.portfolio.portfolio1.portfolio1ProjectDateValue + "</li>";
-    portfolio1 =+ "<li><strong>" + language.portfolio.portfolio1.portfolio1ProjectUrl + "</strong>:" + language.portfolio.portfolio1.portfolio1ProjectUrlValue + "</li>";
-    document.getElementById('portfolioUl1').innerHTML = portfolio1;
 
     //Contacts
     document.getElementById("contactTitle1").textContent = language.contact.contactTitle1;
@@ -681,4 +682,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById("subject").placeholder = language.contact.form.subject;
     document.getElementById("message").placeholder = language.contact.form.message;
     document.getElementById("liveAlertBtn").textContent = language.contact.form.liveAlertBtn;
+  
 });

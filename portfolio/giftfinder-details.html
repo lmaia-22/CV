@@ -8,8 +8,9 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/favicon-32x32.png" rel="icon">
   <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assets/img/android-chrome-192x192.png" rel="android-chrome-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -27,6 +28,36 @@
 
 </head>
 
+<!-- Template Main JS File -->
+<script src="../assets/js/main.js"></script>
+<script defer>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    getLanguage();
+    document.getElementById("portfolio4Title1").textContent = language.portfolio.portfolio4.portfolio4Title1;
+    document.getElementById("portfolio4Title2").textContent = language.portfolio.portfolio4.portfolio4Title2;
+    document.getElementById("portfolio4Desc1").textContent = language.portfolio.portfolio4.portfolio4Desc1;
+
+    var ul = document.getElementById('portfolioUl4');
+      var li = document.createElement("li");
+      li.innerHTML = "<li><strong>" + language.portfolio.portfolio4.portfolio4Category + "</strong>" + language.portfolio.portfolio4.portfolio4CategoryValue + "</li>";
+      ul.appendChild(li);
+
+      var li1 = document.createElement("li");
+      li1.innerHTML = "<li><strong>" + language.portfolio.portfolio4.portfolio4Client + "</strong>" + language.portfolio.portfolio4.portfolio4ClientValue + "</li>";
+      ul.appendChild(li1);
+
+      var li2 = document.createElement("li");
+      li2.innerHTML = "<li><strong>" + language.portfolio.portfolio4.portfolio4ProjectDate + "</strong>" + language.portfolio.portfolio4.portfolio4ProjectDateValue + "</li>";
+      ul.appendChild(li2);
+
+      var li3 = document.createElement("li");
+      li3.innerHTML = "<li><strong>" + language.portfolio.portfolio4.portfolio4ProjectUrl + "</strong><a href='" + language.portfolio.portfolio4.portfolio4ProjectUrlValue + "'>" + language.portfolio.portfolio1.portfolio4Title1 + "</a></li>";
+      ul.appendChild(li3);
+
+}, false);
+</script>
+
 <body>
 
   <main id="main">
@@ -38,7 +69,7 @@
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 id="portfolio4Title1" class="portfolio-title">Gift Finder</h2>
+            <h2 id="portfolio4Title1" class="portfolio-title"></h2>
 
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
@@ -54,18 +85,9 @@
           </div>
 
           <div class="col-lg-4 portfolio-info">
-            <h3 id="portfolio4Title2">Project information</h3>
-            <ul>
-              <li><strong>Category</strong>: Tool Development</li>
-              <li><strong>Client</strong>: WorldWide</li>
-              <li><strong>Project date</strong>: 12 February, 2021</li>
-              <li><strong>Project URL</strong>: <a href="https://github.com/lmaia-22/gift_finder">GitHub Repository</a></li>
-              <li><strong>Blog of Project URL</strong>: <a href="https://github.com/lmaia-22/Gift_blog">GitHub Repository</a></li>
-            </ul>
-            <p id="portfolio4Desc1">
-              A work in progress to help others finding the best present to give to friends, family, love ones... in any occasion, birthdays, weddings and others!
-              With the help of AI and a form with multiple questions about the person in question try to suggest the best ideas possible.
-            </p>
+            <h3 id="portfolio4Title2"></h3>
+            <ul id="portfolioUl4"></ulid></ul>
+            <p id="portfolio4Desc1"></p>
           </div>
 
         </div>
@@ -78,14 +100,22 @@
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/purecounter/purecounter.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
   <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/typed.js/typed.min.js"></script>
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
+  <!-- first include tsParticles engine -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
+  
+  <!-- then include any tsParticles plugin needed -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
+  
+  <!-- then include jquery wrapper -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
 
 </body>
 

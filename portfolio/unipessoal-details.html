@@ -8,8 +8,9 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/favicon-32x32.png" rel="icon">
   <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assets/img/android-chrome-192x192.png" rel="android-chrome-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -26,6 +27,36 @@
   <link href="../assets/css/style.css" rel="stylesheet">
 
 </head>
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+<script defer>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    getLanguage();
+    document.getElementById("portfolio2Title1").textContent = language.portfolio.portfolio2.portfolio2Title1;
+    document.getElementById("portfolio2Title2").textContent = language.portfolio.portfolio2.portfolio2Title2;
+    document.getElementById("portfolio2Desc1").textContent = language.portfolio.portfolio2.portfolio2Desc1;
+
+    var ul = document.getElementById('portfolioUl2');
+      var li = document.createElement("li");
+      li.innerHTML = "<li><strong>" + language.portfolio.portfolio2.portfolio2Category + "</strong>" + language.portfolio.portfolio2.portfolio2CategoryValue + "</li>";
+      ul.appendChild(li);
+
+      var li1 = document.createElement("li");
+      li1.innerHTML = "<li><strong>" + language.portfolio.portfolio2.portfolio2Client + "</strong>" + language.portfolio.portfolio2.portfolio2ClientValue + "</li>";
+      ul.appendChild(li1);
+
+      var li2 = document.createElement("li");
+      li2.innerHTML = "<li><strong>" + language.portfolio.portfolio2.portfolio2ProjectDate + "</strong>" + language.portfolio.portfolio2.portfolio2ProjectDateValue + "</li>";
+      ul.appendChild(li2);
+
+      var li3 = document.createElement("li");
+      li3.innerHTML = "<li><strong>" + language.portfolio.portfolio2.portfolio2ProjectUrl + "</strong><a href='" + language.portfolio.portfolio2.portfolio2ProjectUrlValue + "'>" + language.portfolio.portfolio2.portfolio2Title1 + "</a></li>";
+      ul.appendChild(li3);
+
+}, false);
+
+</script>
 
 <body>
 
@@ -38,7 +69,7 @@
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 id="portfolio2Title1" class="portfolio-title">UniPessoal LDA</h2>
+            <h2 id="portfolio2Title1" class="portfolio-title"></h2>
 
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
@@ -62,17 +93,9 @@
           </div>
 
           <div class="col-lg-4 portfolio-info">
-            <h3 id="portfolio2Title2">Project information</h3>
-            <ul>
-              <li><strong>Category</strong>: Website Development</li>
-              <li><strong>Client</strong>: <a href="https://www.racius.com/titulos-assuntos-unipessoal-lda/">Títulos & Assuntos - Unipessoal Lda</a></li>
-              <li><strong>Project date</strong>: 21 December, 2019</li>
-              <li><strong>Project URL</strong>: <a href="https://github.com/lmaia-22/Unipessoal-Website">Github Repository</a></li>
-            </ul>
-
-            <p id="portfolio2Desc1">
-              Unipessoal is a website developed for a Construction Company in 2019. But shutdown later in the year 2020. Currently the website is down but you can find the work in my github repository.
-            </p>
+            <h3 id="portfolio2Title2"></h3>
+            <ul id="portfolioUl2"></ul>
+            <p id="portfolio2Desc1"></p>
           </div>
 
         </div>
@@ -82,17 +105,25 @@
 
   </main><!-- End #main -->
 
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/purecounter/purecounter.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
+<!-- Vendor JS Files -->
+<script src="../assets/vendor/purecounter/purecounter.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/aos/aos.js"></script>
+<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/vendor/typed.js/typed.min.js"></script>
+<script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
+<!-- first include tsParticles engine -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
+
+<!-- then include any tsParticles plugin needed -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
+
+<!-- then include jquery wrapper -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
 
 </body>
 

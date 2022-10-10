@@ -8,8 +8,9 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/favicon-32x32.png" rel="icon">
   <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assets/img/android-chrome-192x192.png" rel="android-chrome-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -24,55 +25,63 @@
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
-
 </head>
+<!-- Template Main JS File -->
+<script src="../assets/js/main.js"></script>
+<script defer>
 
+  document.addEventListener('DOMContentLoaded', function() {
+    getLanguage();
+    document.getElementById("portfolio5Title1").textContent = language.portfolio.portfolio5.portfolio5Title1;
+    document.getElementById("portfolio5Title2").textContent = language.portfolio.portfolio5.portfolio5Title2;
+    document.getElementById("portfolio5Desc1").textContent = language.portfolio.portfolio5.portfolio5Desc1;
+
+    var ul = document.getElementById('portfolioUl5');
+      var li = document.createElement("li");
+      li.innerHTML = "<li><strong>" + language.portfolio.portfolio5.portfolio5Category + "</strong>" + language.portfolio.portfolio5.portfolio5CategoryValue + "</li>";
+      ul.appendChild(li);
+
+      var li1 = document.createElement("li");
+      li1.innerHTML = "<li><strong>" + language.portfolio.portfolio5.portfolio5Client + "</strong>" + language.portfolio.portfolio5.portfolio1ClientValue + "</li>";
+      ul.appendChild(li1);
+
+      var li2 = document.createElement("li");
+      li2.innerHTML = "<li><strong>" + language.portfolio.portfolio5.portfolio5ProjectDate + "</strong>" + language.portfolio.portfolio5.portfolio5ProjectDateValue + "</li>";
+      ul.appendChild(li2);
+
+      var li3 = document.createElement("li");
+      li3.innerHTML = "<li><strong>" + language.portfolio.portfolio5.portfolio5ProjectUrl + "</strong><a href='" + language.portfolio.portfolio5.portfolio5ProjectUrlValue + "'>" + language.portfolio.portfolio5.portfolio5Title1 + "</a></li>";
+      ul.appendChild(li3);
+
+}, false);
+</script>
 <body>
 
   <main id="main">
-
     <!-- ======= Portfolio Details ======= -->
     <div id="portfolio-details" class="portfolio-details">
       <div class="container">
-
         <div class="row">
-
           <div class="col-lg-8">
-            <h2 id="portfolio5Title1" class="portfolio-title">SMTP Service</h2>
-
+            <h2 id="portfolio5Title1" class="portfolio-title"></h2>
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
                   <img src="../assets/img/portfolio/github/cover.png" alt="">
                 </div>
                 <div class="swiper-slide">
                   <img class="text-center" src="../assets/img/portfolio/github/smtp2go-logo.png" alt="">
                 </div>
-
               </div>
               <div class="swiper-pagination"></div>
             </div>
-
           </div>
-
           <div class="col-lg-4 portfolio-info">
-            <h3 id="portfolio5Title2">Project information</h3>
-            <ul>
-              <li><strong>Category</strong>: Website Development</li>
-              <li><strong>Client</strong>: Myself</li>
-              <li><strong>Project date</strong>: 12 September, 2019</li>
-              <li><strong>Project URL</strong>: <a href="https://lmaia-22.github.com">SMTP Service</a></li>
-            </ul>
-
-            <p id="portfolio5Desc1">
-              To have a contact form on built websites I develop a simple nodejs application using nodemailer and a smtp service (smtp2go) to host this service. 
-              I deployed this service in the plataform heroku.
-            </p>
+            <h3 id="portfolio5Title2"></h3>
+            <ul id="portfolioUl5"></ul>
+            <p id="portfolio5Desc1"> </p>
           </div>
-
         </div>
-
       </div>
     </div><!-- End Portfolio Details -->
 
@@ -81,14 +90,22 @@
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/purecounter/purecounter.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
   <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/typed.js/typed.min.js"></script>
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
+  <!-- first include tsParticles engine -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
+  
+  <!-- then include any tsParticles plugin needed -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
+  
+  <!-- then include jquery wrapper -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
 
 </body>
 
