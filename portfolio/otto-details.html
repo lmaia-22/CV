@@ -32,7 +32,7 @@
 <script defer>
 
   document.addEventListener('DOMContentLoaded', function() {
-    getLanguage();
+    getLanguageportfolio();
     document.getElementById("portfolio6Title1").textContent = language.portfolio.portfolio6.portfolio6Title1;
     document.getElementById("portfolio6Title2").textContent = language.portfolio.portfolio6.portfolio6Title2;
     document.getElementById("portfolio6Desc1").textContent = language.portfolio.portfolio6.portfolio6Desc1;
@@ -59,41 +59,28 @@
 <body>
 
   <main id="main">
-
     <!-- ======= Portfolio Details ======= -->
     <div id="portfolio-details" class="portfolio-details">
       <div class="container">
-
         <div class="row">
-
           <div class="col-lg-8">
             <h2 class="portfolio-title" id="portfolio6Title1"></h2>
-
-            <div class="portfolio-details-slider swiper">
+            <div class="portfolio-details-slider">
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/otto/otto.gif" alt="">
+                  <img id="otto_image" src="../assets/img/portfolio/otto/otto.gif" alt="">
                 </div>
-
               </div>
-              <div class="swiper-pagination"></div>
             </div>
-
           </div>
-
           <div class="col-lg-4 portfolio-info">
             <h3 id="portfolio6Title2"></h3>
             <ul id="portfolioUl6"></ul>
-
             <p id="portfolio6Desc1"></p>
           </div>
-
         </div>
-
       </div>
     </div><!-- End Portfolio Details -->
-
   </main><!-- End #main -->
 
   <!-- Vendor JS Files -->

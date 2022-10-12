@@ -27,49 +27,60 @@
 
 </head>
 
+<!-- Template Main JS File -->
+<script src="../assets/js/main.js"></script>
+<script defer>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    getLanguageportfolio();
+    document.getElementById("portfolio9Title1").textContent = language.portfolio.portfolio9.portfolio9Title1;
+    document.getElementById("portfolio9Title2").textContent = language.portfolio.portfolio9.portfolio9Title2;
+    document.getElementById("portfolio9Desc1").textContent = language.portfolio.portfolio9.portfolio9Desc1;
+
+    var ul = document.getElementById('portfolioUl9');
+      var li = document.createElement("li");
+      li.innerHTML = "<li><strong>" + language.portfolio.portfolio9.portfolio9Category + "</strong>" + language.portfolio.portfolio9.portfolio9CategoryValue + "</li>";
+      ul.appendChild(li);
+
+      var li1 = document.createElement("li");
+      li1.innerHTML = "<li><strong>" + language.portfolio.portfolio9.portfolio9Client + "</strong>" + language.portfolio.portfolio9.portfolio9ClientValue + "</li>";
+      ul.appendChild(li1);
+
+      var li2 = document.createElement("li");
+      li2.innerHTML = "<li><strong>" + language.portfolio.portfolio9.portfolio9ProjectDate + "</strong>" + language.portfolio.portfolio9.portfolio9ProjectDateValue + "</li>";
+      ul.appendChild(li2);
+
+      var li3 = document.createElement("li");
+      li3.innerHTML = "<li><strong>" + language.portfolio.portfolio9.portfolio9ProjectUrl + "</strong><a href='" + language.portfolio.portfolio9.portfolio9ProjectUrlValue + "'>" + language.portfolio.portfolio9.portfolio9Title1 + "</a></li>";
+      ul.appendChild(li3);
+
+}, false);
+</script>
+
 <body>
 
   <main id="main">
-
     <!-- ======= Portfolio Details ======= -->
     <div id="portfolio-details" class="portfolio-details">
       <div class="container">
-
         <div class="row">
-
           <div class="col-lg-8">
-            <h2 id="portfolio9Title1" class="portfolio-title">My Furniture</h2>
-
-            <div class="portfolio-details-slider swiper">
+            <h2 id="portfolio9Title1" class="portfolio-title"></h2>
+            <div class="portfolio-details-slider">
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/furnitureleds/cover.gif" alt="">
+                  <img id="leds_image" src="../assets/img/portfolio/furnitureleds/cover.gif" alt="">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
-
           </div>
-
           <div class="col-lg-4 portfolio-info">
-            <h3 id="portfolio9Title2">Project information</h3>
-            <ul>
-              <li><strong>Category</strong>: Project Development</li>
-              <li><strong>Client</strong>: Myself</li>
-              <li><strong>Project date</strong>: 12 April, 2022</li>
-              <li><strong>Project URL</strong>: <a href="#">No Link Available</a></li>
-            </ul>
-
-            <p id="portfolio9Desc1">
-              I decided to have led strips reacting to sound on the furniture. So I decided to by addressable led strips WS2812b 5v and a sound box with a microphone built-in and a bluetooth connector. 
-              With an App for mobile connects to the sound box through bluetooh and allows to program wich led strip individually.
-              To power everyhting up I bought a 250W power supplier with a switch in the middle to turn on and off all leds strips.
-            </p>
+            <h3 id="portfolio9Title2"></h3>
+            <ul id="portfolioUl9"></ul>
+            <p id="portfolio9Desc1"></p>
           </div>
-
         </div>
-
       </div>
     </div><!-- End Portfolio Details -->
 
@@ -78,13 +89,22 @@
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/purecounter/purecounter.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
   <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/typed.js/typed.min.js"></script>
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
+  <!-- first include tsParticles engine -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
+  
+  <!-- then include any tsParticles plugin needed -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
+  
+  <!-- then include jquery wrapper -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
 
 </body>
 

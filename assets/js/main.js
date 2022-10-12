@@ -520,7 +520,21 @@ var language;
         url:  'language/' +  localStorage.getItem('language') + '.json', 
         dataType: 'json', async: false, dataType: 'json', 
         success: function (lang) { language = lang } });
+
+        if(language == null){
+          $.ajax({ 
+            url:  '/language/' +  localStorage.getItem('language') + '.json', 
+            dataType: 'json', async: false, dataType: 'json', 
+            success: function (lang) { language = lang } });
+        }
   }
+
+  function getLanguageportfolio() {
+    $.ajax({ 
+      url:  '/language/' +  localStorage.getItem('language') + '.json', 
+      dataType: 'json', async: false, dataType: 'json', 
+      success: function (lang) { language = lang } });
+}
 
   function setLanguage(lang) {
     localStorage.setItem('language', lang);

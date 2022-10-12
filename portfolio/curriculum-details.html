@@ -32,7 +32,7 @@
 <script defer>
 
   document.addEventListener('DOMContentLoaded', function() {
-    getLanguage();
+    getLanguageportfolio();
     document.getElementById("portfolio3Title1").textContent = language.portfolio.portfolio3.portfolio3Title1;
     document.getElementById("portfolio3Title2").textContent = language.portfolio.portfolio3.portfolio3Title2;
     document.getElementById("portfolio3Desc1").textContent = language.portfolio.portfolio3.portfolio3Desc1;
@@ -66,11 +66,9 @@
         <div class="row">
           <div class="col-lg-8">
             <h2 id="portfolio3Title1" class="portfolio-title"></h2>
-            <div class="portfolio-details-slider swiper">
+            <div class="portfolio-details-slider">
               <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/curriculum/cover.png" alt="">
-                </div>
+                  <img id="curriculum_image" src="../assets/img/portfolio/curriculum/cover.png" alt="">
               </div>
               <div class="swiper-pagination"></div>
             </div>

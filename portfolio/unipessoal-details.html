@@ -32,7 +32,7 @@
 <script defer>
 
   document.addEventListener('DOMContentLoaded', function() {
-    getLanguage();
+    getLanguageportfolio();
     document.getElementById("portfolio2Title1").textContent = language.portfolio.portfolio2.portfolio2Title1;
     document.getElementById("portfolio2Title2").textContent = language.portfolio.portfolio2.portfolio2Title2;
     document.getElementById("portfolio2Desc1").textContent = language.portfolio.portfolio2.portfolio2Desc1;
@@ -61,48 +61,28 @@
 <body>
 
   <main id="main">
-
     <!-- ======= Portfolio Details ======= -->
     <div id="portfolio-details" class="portfolio-details">
       <div class="container">
-
         <div class="row">
-
           <div class="col-lg-8">
             <h2 id="portfolio2Title1" class="portfolio-title"></h2>
-
-            <div class="portfolio-details-slider swiper">
+            <div class="portfolio-details-slider">
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/unipessoal/cover.png" alt="">
+                  <img id="uni1_image" src="../assets/img/portfolio/unipessoal/cover1.png" alt="">
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/unipessoal/cover1.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/unipessoal/cover2.png" alt="">
-                </div>
-
               </div>
-              <div class="swiper-pagination"></div>
             </div>
-
           </div>
-
           <div class="col-lg-4 portfolio-info">
             <h3 id="portfolio2Title2"></h3>
             <ul id="portfolioUl2"></ul>
             <p id="portfolio2Desc1"></p>
           </div>
-
         </div>
-
       </div>
     </div><!-- End Portfolio Details -->
-
   </main><!-- End #main -->
 
 <!-- Vendor JS Files -->

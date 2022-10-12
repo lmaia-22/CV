@@ -1015,3 +1015,98 @@ section .container {
     transform: rotate(360deg);
   }
 }
+
+
+/* Media queries for portfolio*/
+
+#promo_video {
+  width: 90%;
+}
+#firefighter_video{
+  width: 90%;
+}
+#curriculum_image{
+  width: 90%;
+}
+#furniture_image{
+  width: 90%;
+}
+#leds_image{
+  width: 90%;
+}
+#giftfinder_image{
+  width: 90%;
+}
+#github_image{
+  width: 90%;
+}
+#otto_image{
+  width: 90%;  
+}
+#uni1_image{
+  width: 90%;  
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  #promo_video {
+    width: 100%;
+  }
+  #firefighter_video{
+    width: 100%;
+  }
+  #curriculum_image{
+    width: 100%;
+  }
+  #furniture_image{
+    width: 100%;
+  }
+  #leds_image{
+    width: 100%;
+  }
+  #giftfinder_image{
+    width: 100%;
+  }
+  #github_image{
+    width: 100%;
+  }
+  #otto_image{
+    width: 100%;  
+  }
+  #uni1_image{
+    width: 100%;  
+  }
+  
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  #promo_video {
+    width: 100%;
+  }
+  #curriculum_image{
+    width: 100%;
+  }
+  #curriculum_image{
+    width: 100%;
+  }
+  #furniture_image{
+    width: 100%;
+  }
+  #leds_image{
+    width: 100%;
+  }
+  #giftfinder_image{
+    width: 100%;
+  }
+  #github_image{
+    width: 100%;
+  }
+  #otto_image{
+    width: 100%;  
+  }
+  #uni1_image{
+    width: 100%;  
+  }
+  
+}

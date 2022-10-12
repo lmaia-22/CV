@@ -33,26 +33,26 @@
 <script defer>
 
   document.addEventListener('DOMContentLoaded', function() {
-    getLanguage();
+    getLanguageportfolio();
     document.getElementById("portfolio7Title1").textContent = language.portfolio.portfolio7.portfolio7Title1;
     document.getElementById("portfolio7Title2").textContent = language.portfolio.portfolio7.portfolio7Title2;
     document.getElementById("portfolio7Desc1").textContent = language.portfolio.portfolio7.portfolio7Desc1;
 
-    var ul = document.getElementById('portfolioUl1');
+    var ul = document.getElementById('portfolioUl7');
       var li = document.createElement("li");
-      li.innerHTML = "<li><strong>" + language.portfolio.portfolio7.portfolio1Category + "</strong>" + language.portfolio.portfolio7.portfolio1CategoryValue + "</li>";
+      li.innerHTML = "<li><strong>" + language.portfolio.portfolio7.portfolio7Category + "</strong>" + language.portfolio.portfolio7.portfolio7CategoryValue + "</li>";
       ul.appendChild(li);
 
       var li1 = document.createElement("li");
-      li1.innerHTML = "<li><strong>" + language.portfolio.portfolio7.portfolio1Client + "</strong>" + language.portfolio.portfolio7.portfolio1ClientValue + "</li>";
+      li1.innerHTML = "<li><strong>" + language.portfolio.portfolio7.portfolio7Client + "</strong>" + language.portfolio.portfolio7.portfolio7ClientValue + "</li>";
       ul.appendChild(li1);
 
       var li2 = document.createElement("li");
-      li2.innerHTML = "<li><strong>" + language.portfolio.portfolio7.portfolio1ProjectDate + "</strong>" + language.portfolio.portfolio7.portfolio1ProjectDateValue + "</li>";
+      li2.innerHTML = "<li><strong>" + language.portfolio.portfolio7.portfolio7ProjectDate + "</strong>" + language.portfolio.portfolio7.portfolio7ProjectDateValue + "</li>";
       ul.appendChild(li2);
 
       var li3 = document.createElement("li");
-      li3.innerHTML = "<li><strong>" + language.portfolio.portfolio7.portfolio1ProjectUrl + "</strong><a href='" + language.portfolio.portfolio7.portfolio1ProjectUrlValue + "'>" + language.portfolio.portfolio7.portfolio1Title1 + "</a></li>";
+      li3.innerHTML = "<li><strong>" + language.portfolio.portfolio7.portfolio7ProjectUrl + "</strong><a href='" + language.portfolio.portfolio7.portfolio7ProjectUrlValue + "'>" + language.portfolio.portfolio7.portfolio1Title1 + "</a></li>";
       ul.appendChild(li3);
 
 }, false);
@@ -66,14 +66,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <h2 id="portfolio7Title1 " class="portfolio-title"></h2>
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/firefighter/cover.png" alt="">
-                </div>
+            <h2 id="portfolio7Title1" class="portfolio-title"></h2>
+            <div class="portfolio-details-slider">
+              <div class="align-items-center">
+                  <video id="firefighter_video" controls src="../assets/img/portfolio/firefighter/robo_bombeiro.mp4" alt="">
               </div>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
           <div class="col-lg-4 portfolio-info">
@@ -81,33 +78,30 @@
             <ul id="portfolioUl7"></ul>
             <p id="portfolio7Desc1"></p>
           </div>
-
         </div>
-
       </div>
     </div><!-- End Portfolio Details -->
-
   </main><!-- End #main -->
 
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/purecounter/purecounter.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/typed.js/typed.min.js"></script>
-  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <!-- Vendor JS Files -->
+ <script src="../assets/vendor/purecounter/purecounter.js"></script>
+ <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="../assets/vendor/aos/aos.js"></script>
+ <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+ <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+ <script src="../assets/vendor/typed.js/typed.min.js"></script>
+ <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <!-- first include tsParticles engine -->
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
-  
-  <!-- then include any tsParticles plugin needed -->
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
-  
-  <!-- then include jquery wrapper -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
+ <!-- first include tsParticles engine -->
+ <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
+ 
+ <!-- then include any tsParticles plugin needed -->
+ <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
+ 
+ <!-- then include jquery wrapper -->
+ <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
 
 </body>
 
