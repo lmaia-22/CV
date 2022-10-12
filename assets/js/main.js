@@ -517,7 +517,7 @@ emailjs.send("service_mwvejg5", "template_mo4vbzk", {
 var language; 
   function getLanguage() {
       $.ajax({ 
-        url:  'language/' +  localStorage.getItem('language') + '.json', 
+        url:  '/CV/language/' +  localStorage.getItem('language') + '.json', 
         dataType: 'json', async: false, dataType: 'json', 
         success: function (lang) { language = lang } });
 
