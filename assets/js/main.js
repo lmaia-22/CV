@@ -502,12 +502,11 @@ emailjs.send("service_mwvejg5", "template_mo4vbzk", {
                 alertPlaceholder.append(wrapper)
                 }
 
-        const alertTrigger = document.getElementById('liveAlertBtn')
-        if (alertTrigger) {
+        const alertTrigger = document.getElementById('liveAlertBtn');
         alertTrigger.addEventListener('click', () => {
             alert('Mensagem enviada com sucesso!', 'success')
         })
-    }
+
     console.log('SUCCESS!', response.status, response.text);
  }, function(error) {
     console.log('FAILED...', error);
@@ -571,7 +570,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById("email1Value").textContent = language.about.email1Value;
     document.getElementById("freelance").textContent = language.about.freelance;
     document.getElementById("freelanceValue").textContent = language.about.freelanceValue;
-    document.getElementById("aboutText2").textContent = language.about.aboutText1;
+    document.getElementById("aboutText2").textContent = language.about.aboutText2;
     document.getElementById("countProcess").textContent = language.about.counts.countProcess;
     document.getElementById("countProjects").textContent = language.about.counts.countProjects;
     document.getElementById("countHoursSupport").textContent = language.about.counts.countHoursSupport;
