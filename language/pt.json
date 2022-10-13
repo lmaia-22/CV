@@ -283,6 +283,21 @@
             "portfolio9ProjectUrl": "Url do Projeto: ",
             "portfolio9ProjectUrlValue": "https://www.isep.ipp.pt/new/viewnew/5391?fbclid=IwAR38ziUDcppEOnyWo3XRvF7kNWz1OgXYeGWIYfNFqiScSoa9flu4ZM_PnMM",
             "portfolio9Desc1": "Eu decidi colocar fitas de led no móvel reagindo ao som. Então resolvi por fitas led endereçáveis ​​WS2812b 5v e uma caixa de som com microfone embutido e um conector bluetooth. Com uma App para telemóvel que se conecta à caixa de som via bluetooh e permite programar a faixa de led individualmente. Para ligar tudo, comprei uma fonte de alimentação de 250W com um interruptor no meio para ligar e desligar todas as fitas de leds."
+        },
+        "portfolio10":{
+            "portfolio10Title": "Certificado Microsoft - Adminsitração e Planeamento de SharePoint 2016",
+            "portfolio10Desc": "Projeto",
+            "portfolio10Title1": "Certificado Microsoft - Adminsitração e Planeamento de SharePoint 2016",
+            "portfolio10Title2": "Informação do Curso",
+            "portfolio10Category": "Categoria: ",
+            "portfolio10CategoryValue": "SharePoint 2016",
+            "portfolio10Client": "Cliente: ",
+            "portfolio10ClientValue": "Eu",
+            "portfolio10ProjectDate": "Data do Projeto: ",
+            "portfolio10ProjectDateValue": "08 Outubro, 2020",
+            "portfolio10ProjectUrl": "Url do Projeto: ",
+            "portfolio10ProjectUrlValue": "Sem link Disponível",
+            "portfolio10Desc1": "O curso ensina como implementar, administrar e solucionar problemas no ambiente do SharePoint. Este curso também fornece diretrizes, práticas recomendadas e considerações que ajudam a otimizar a sua implementação."
         }
     },
     "contact":{

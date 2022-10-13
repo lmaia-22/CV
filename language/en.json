@@ -286,6 +286,21 @@
             "portfolio9ProjectUrl": "Project URL: ",
             "portfolio9ProjectUrlValue": "No Link Available",
             "portfolio9Desc1": "I decided to have led strips reacting to sound on the furniture. So I decided to by addressable led strips WS2812b 5v and a sound box with a microphone built-in and a bluetooth connector. With an App for mobile connects to the sound box through bluetooh and allows to program wich led strip individually. To power everyhting up I bought a 250W power supplier with a switch in the middle to turn on and off all leds strips."
+        },
+        "portfolio10":{
+            "portfolio10Title": "Microsoft Certificate - Planning and Administering SharePoint 2016",
+            "portfolio10Desc": "Project",
+            "portfolio10Title1": "Microsoft Certificate - Planning and Administering SharePoint 2016",
+            "portfolio10Title2": "Course information",
+            "portfolio10Category": "Category: ",
+            "portfolio10CategoryValue": "SharePoint 2016",
+            "portfolio10Client": "Client: ",
+            "portfolio10ClientValue": "Myself",
+            "portfolio10ProjectDate": "Project date: ",
+            "portfolio10ProjectDateValue": "08 October, 2020",
+            "portfolio10ProjectUrl": "Project URL: ",
+            "portfolio10ProjectUrlValue": "No Link Available",
+            "portfolio10Desc1": "The course teaches you how to deploy, administer, and troubleshoot your SharePoint environment. This course also provides guidelines, best practices, and considerations that help you optimize your SharePoint deployment."
         }
     },
     "contact":{

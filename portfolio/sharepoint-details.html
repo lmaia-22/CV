@@ -32,25 +32,25 @@
 
   document.addEventListener('DOMContentLoaded', function() {
     getLanguage();
-    document.getElementById("portfolio5Title1").textContent = language.portfolio.portfolio5.portfolio5Title1;
-    document.getElementById("portfolio5Title2").textContent = language.portfolio.portfolio5.portfolio5Title2;
-    document.getElementById("portfolio5Desc1").textContent = language.portfolio.portfolio5.portfolio5Desc1;
+    document.getElementById("portfolio10Title1").textContent = language.portfolio.portfolio10.portfolio10Title1;
+    document.getElementById("portfolio10Title2").textContent = language.portfolio.portfolio10.portfolio10Title2;
+    document.getElementById("portfolio10Desc1").textContent = language.portfolio.portfolio10.portfolio10Desc1;
 
-    var ul = document.getElementById('portfolioUl5');
+    var ul = document.getElementById('portfolioUl10');
       var li = document.createElement("li");
-      li.innerHTML = "<li><strong>" + language.portfolio.portfolio5.portfolio5Category + "</strong>" + language.portfolio.portfolio5.portfolio5CategoryValue + "</li>";
+      li.innerHTML = "<li><strong>" + language.portfolio.portfolio10.portfolio10Category + "</strong>" + language.portfolio.portfolio10.portfolio3CategoryValue + "</li>";
       ul.appendChild(li);
 
       var li1 = document.createElement("li");
-      li1.innerHTML = "<li><strong>" + language.portfolio.portfolio5.portfolio5Client + "</strong>" + language.portfolio.portfolio5.portfolio1ClientValue + "</li>";
+      li1.innerHTML = "<li><strong>" + language.portfolio.portfolio10.portfolio10Client + "</strong>" + language.portfolio.portfolio10.portfolio10ClientValue + "</li>";
       ul.appendChild(li1);
 
       var li2 = document.createElement("li");
-      li2.innerHTML = "<li><strong>" + language.portfolio.portfolio5.portfolio5ProjectDate + "</strong>" + language.portfolio.portfolio5.portfolio5ProjectDateValue + "</li>";
+      li2.innerHTML = "<li><strong>" + language.portfolio.portfolio10.portfolio10ProjectDate + "</strong>" + language.portfolio.portfolio10.portfolio10ProjectDateValue + "</li>";
       ul.appendChild(li2);
 
       var li3 = document.createElement("li");
-      li3.innerHTML = "<li><strong>" + language.portfolio.portfolio5.portfolio5ProjectUrl + "</strong><a href='" + language.portfolio.portfolio5.portfolio5ProjectUrlValue + "'>" + language.portfolio.portfolio5.portfolio5Title1 + "</a></li>";
+      li3.innerHTML = "<li><strong>" + language.portfolio.portfolio10.portfolio10ProjectUrl + "</strong><a>" + language.portfolio.portfolio10.portfolio10ProjectUrlValue + "</a></li>";
       ul.appendChild(li3);
 
 }, false);
@@ -63,19 +63,19 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <h2 id="portfolio5Title1" class="portfolio-title"></h2>
+            <h2 id="portfolio10Title1" class="portfolio-title"></h2>
             <div class="portfolio-details-slider">
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img id="github_image" src="../assets/img/portfolio/github/cover.png" alt="">
+                  <img id="sharepoint_image" src="../assets/img/portfolio/sharepoint/certificate.png" alt="">
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 portfolio-info">
-            <h3 id="portfolio5Title2"></h3>
-            <ul id="portfolioUl5"></ul>
-            <p id="portfolio5Desc1"> </p>
+            <h3 id="portfolio10Title2"></h3>
+            <ul id="portfolioUl10"></ul>
+            <p id="portfolio10Desc1"> </p>
           </div>
         </div>
       </div>
