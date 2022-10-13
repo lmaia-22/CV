@@ -9,7 +9,9 @@ body {
   background: transparent;
   z-index: -1;
   -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  scrollbar-width: none; /* Firefox */
+  width:100vw;
+  height:100vh; 
 }
 
 body::-webkit-scrollbar {
