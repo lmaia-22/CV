@@ -475,44 +475,6 @@ tsParticles.load("tsparticles", {
 })()
 
 
-document.getElementById("contactForm").addEventListener("submit", function (event) {
-  event.preventDefault();
-});
-
-function sendMail(contactForm) {
-emailjs.send("service_mwvejg5", "template_mo4vbzk", {
-    "from_name":"CV-website",
-    "CV_name": contactForm.name.value,
-    "CV_email": contactForm.email.value,
-    "CV_subject": contactForm.subject.value,
-    "CV_message": contactForm.message.value
-})
-.then(function(response) {
-    const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
-
-    const alert = (message, type) => {
-                const wrapper = document.createElement('div')
-                wrapper.innerHTML = [
-                    `<div id="alert1" class="alert alert-${type} alert-dismissible" role="alert">`,
-                    `   <div>${message}</div>`,
-                    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-                    '</div>'
-                ].join('')
-
-                alertPlaceholder.append(wrapper)
-                }
-
-        const alertTrigger = document.getElementById('liveAlertBtn');
-        alertTrigger.addEventListener('click', () => {
-            alert('Mensagem enviada com sucesso!', 'success')
-        })
-
-    console.log('SUCCESS!', response.status, response.text);
- }, function(error) {
-    console.log('FAILED...', error);
- });
-}
-
 var language; 
   function getLanguage() {
       $.ajax({ 
@@ -689,4 +651,36 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById("message").placeholder = language.contact.form.message;
     document.getElementById("liveAlertBtn").textContent = language.contact.form.liveAlertBtn;
   
+    //ContactForm
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      emailjs.send("service_mwvejg5", "template_mo4vbzk", {
+        "from_name":"CV-website",
+        "CV_name": contactForm.name.value,
+        "CV_email": contactForm.email.value,
+        "CV_subject": contactForm.subject.value,
+        "CV_message": contactForm.message.value
+      })
+      .then(function(response) {
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+  
+        const alert = (message, type) => {
+                    const wrapper = document.createElement('div')
+                    wrapper.innerHTML = [
+                        `<div id="alert1" class="alert alert-${type} alert-dismissible" role="alert">`,
+                        `   <div>${message}</div>`,
+                        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                        '</div>'
+                    ].join('')
+  
+                    alertPlaceholder.append(wrapper)
+                    }
+
+                alert('Mensagem enviada com sucesso!', 'success')
+  
+        console.log('SUCCESS!');
+      }, function(error) {
+        console.log('FAILED...', error);
+      });
+  });
 });
