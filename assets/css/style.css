@@ -264,7 +264,6 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   background: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
-  z-index: 999;
   margin-top: 0;
 }
 .navbar-mobile .mobile-nav-toggle {
@@ -359,9 +358,7 @@ section .container {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-#about{
-  z-index: 0;
-}
+
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
