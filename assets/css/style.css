@@ -241,6 +241,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  z-index: 999;
   position: fixed;
   right: 15px;
   top: 15px;
@@ -249,6 +250,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+    z-index: 999;
   }
 
   .navbar ul {
@@ -264,12 +266,14 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   background: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
+  z-index: 999;
   margin-top: 0;
 }
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
   right: 15px;
+  z-index: 999;
 }
 .navbar-mobile ul {
   display: block;
@@ -281,17 +285,21 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0;
   overflow-y: auto;
   transition: 0.3s;
+  z-index: 999;
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 .navbar-mobile li {
   padding: 12px 20px;
+  z-index: 999;
 }
 .navbar-mobile li + li {
   margin: 0;
+  z-index: 999;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
   font-size: 16px;
   position: relative;
+  z-index: 999;
 }
 
 /*--------------------------------------------------------------
