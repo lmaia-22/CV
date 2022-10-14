@@ -306,7 +306,7 @@ section {
   bottom: 100%;
   opacity: 0;
   transition: ease-in-out 0.4s;
-  z-index: 2;
+  z-index: 1;
 }
 section.section-show {
   top: 100px;
