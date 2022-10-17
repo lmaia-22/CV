@@ -129,7 +129,7 @@
             "service3Description": "I offer my know-how in multiples areas of expertise to help you search a solution that fits your needs considering the future"
         },
         "services4":{
-            "service4Title": ">Deployment and Hosting",
+            "service4Title": "Deployment and Hosting",
             "service4Description": "Help configure hosting for a website(Github, Azure, AWS), deploy to the world wide web by registering the domain and enabling secure protcols"
         },
         "services5":{
