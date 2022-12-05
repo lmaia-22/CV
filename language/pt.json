@@ -61,7 +61,7 @@
         "resumeTitle": "Currículo",
         "resumeTitle0": "Descubra o meu currículo",
         "resumeTitle1": "Sumário",
-        "resumeSummary": "Acredito em ser um programador Web inovador e orientado a prazos, com mais de 4 anos de experiência desenhando e desenvolvendo sistemas orientados ao utilizador final. Eu vejo-me como uma pessoa motivada, capaz de despertar interesse e tomar iniciativa para facilitar e ajudar os outros nas suas tarefas recorrentes. Sou um pensador criativo e fora da caixa, sendo capaz de ver além das necessidades de hoje",
+        "resumeSummary": "Sou um programador Web inovador, com mais de 4 anos de experiência desenhando e desenvolvendo sistemas orientados ao utilizador final. Extremamente motivado para melhorar constantemente as minhas competências e crescer profissionalmente. Estou confiante nas minhas capacidades para criar e desenvolver as funcionalidades/ferramentas que permitam o crescimento rápido da solução.",
         "resumeTitle2": "Educação",
         "resumeEduItem1":{
             "resumeEduItem1Title": "Licenciatura em Engenharia Informática",
@@ -93,12 +93,12 @@
             "resumeProfItem1Date": "2019 - Atualmente",
             "resumeProfItem1Local": "Fundação Casa da Música, Porto, Portugal",
             "resumeProfItem1Desc": {
-                "resumeProfItem1Desc1": "Serviço de apoio a mais de 200 utilizadores",
-                "resumeProfItem1Desc2": "Desenho, desenvolvimento e implmentação de soluções informáticas",
-                "resumeProfItem1Desc3": "Procurar no mercado soluções que atendam as necessidades da empresa e elaborar o contrato tendo em considração as leis do CCP (Código de Contratação Pública)",
-                "resumeProfItem1Desc4": "Delegar tarefas às empresas que fornecem aplicativos como serviço.",
-                "resumeProfItem1Desc5": "Ajudar os vários departamentos a encontrar pontos de melhoria e a encontrar soluções que os ajudem a atingir seus objetivos",
-                "resumeProfItem1Desc6": "Suporte de IT e Gestão de Contas de Utilizadores"
+                "resumeProfItem1Desc1": "Helpdesk a mais de 200 utilizadores",
+                "resumeProfItem1Desc2": "Desenho da arquitetura, desenvolvimento e implementação de soluções informáticas",
+                "resumeProfItem1Desc3": "Pesquisa de mercado de soluções que atendam as necessidades da empresa e celebração do respetivo contrato",
+                "resumeProfItem1Desc4": "Delegação e acompanhamento de pedidos de desenvolvimento a terceiros que fornecem SaaS",
+                "resumeProfItem1Desc5": "Automatização de processos e procedimentos nas diversas áreas/departamentos aumentando a eficiência com que atingem os seus objetivos",
+                "resumeProfItem1Desc6": "Suporte de IT e Gestão Utilizadores"
             }
         },
         "resumeProfItem2":{
@@ -106,9 +106,9 @@
             "resumeProfItem2Date": "2018 - 2018",
             "resumeProfItem2Local": "Fundação Casa da Música, Porto, Portugal",
             "resumeProfItem2Desc": {
-                "resumeProfItem2Desc1": "Substituir um programa de criação de arquivos XML para catalogação de elementos multimídia, escrito em Visual Basic, por um formulário web, escrito em linguagem HTML, Javascript, CSS e PHP.",
-                "resumeProfItem2Desc2": "Avaliação e validação da nova Aplicação construída para o restaurante Casa da Música.",
-                "resumeProfItem2Desc3": "Criar uma página em php dinâmica que apresenta a informação dos eventos atuais e próximos a acontecer na Casa da Música, para ser apresentada no sistema de Digital Signage que a Casa da Música está a implementar."
+                "resumeProfItem2Desc1": "Criação de uma aplicação WEB para catalogação de elementos multimídia, desenvolvido HTML, Javascript, CSS e PHP.",
+                "resumeProfItem2Desc2": "Avaliação e validação da nova Aplicação construída para o Restaurante Casa da Música.",
+                "resumeProfItem2Desc3": "Desenvolvimento de uma aplicação WEB em php que apresenta a informação dos eventos a decorrer e próximos, para serem apresentada no sistema de Digital Signage já implementado."
             }
         }
     },
