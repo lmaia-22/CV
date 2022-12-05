@@ -61,6 +61,8 @@
     "resume":{
         "resumeTitle": "Resume",
         "resumeTitle0": "Check My Resume",
+        "pdfDownload": "/assets/docs/cv_Luis_Maia_EN.pdf",
+        "pdfDownloadText": "Download my Resume",
         "resumeTitle1": "Summary",
         "resumeSummary": "I belive to be a innovative and deadline-driven Web developer with more then 4 years of experience designing and developing user-oriented systems. I see myself as a motivated self-start, able to spark interest and take initiative in facilitate and help others with their recurrent tasks. I'm a creative and out-of-the-box thinker, being able to see beyond 'todays needs'",
         "resumeTitle2": "Education",
@@ -96,7 +98,7 @@
             "resumeProfItem1Desc": {
                 "resumeProfItem1Desc1": "Helpdesk service to more then 200 people",
                 "resumeProfItem1Desc2": "Design, development, and implementation of solutions",
-                "resumeProfItem1Desc3": "Searching solutions in the market that fills the needs of the company and close contract with them governed by the laws of CCP(Public Contracting Code)",
+                "resumeProfItem1Desc3": "Internal dashboards built with HTML, JavaScript, CSS and PHP (MVC), for providing information from different areas",
                 "resumeProfItem1Desc4": "Delegate tasks to the outsource companies that provide applications as a service.",
                 "resumeProfItem1Desc5": "Help the various departments find points of improvement and find new solutions that helps them achieve their goals",
                 "resumeProfItem1Desc6": "IT Support and User Account Manager"

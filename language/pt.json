@@ -60,6 +60,8 @@
     "resume":{
         "resumeTitle": "Currículo",
         "resumeTitle0": "Descubra o meu currículo",
+        "pdfDownload": "/assets/docs/cv_Luis_Maia_PT.pdf",
+        "pdfDownloadText": "Faz download do meu CV",
         "resumeTitle1": "Sumário",
         "resumeSummary": "Sou um programador Web inovador, com mais de 4 anos de experiência desenhando e desenvolvendo sistemas orientados ao utilizador final. Extremamente motivado para melhorar constantemente as minhas competências e crescer profissionalmente. Estou confiante nas minhas capacidades para criar e desenvolver as funcionalidades/ferramentas que permitam o crescimento rápido da solução.",
         "resumeTitle2": "Educação",
@@ -95,7 +97,7 @@
             "resumeProfItem1Desc": {
                 "resumeProfItem1Desc1": "Helpdesk a mais de 200 utilizadores",
                 "resumeProfItem1Desc2": "Desenho da arquitetura, desenvolvimento e implementação de soluções informáticas",
-                "resumeProfItem1Desc3": "Pesquisa de mercado de soluções que atendam as necessidades da empresa e celebração do respetivo contrato",
+                "resumeProfItem1Desc3": "Dashboards internos construídos com HTML, JavaScript, CSS e PHP (MVC), para disponibilização de informações de diversas áreas",
                 "resumeProfItem1Desc4": "Delegação e acompanhamento de pedidos de desenvolvimento a terceiros que fornecem SaaS",
                 "resumeProfItem1Desc5": "Automatização de processos e procedimentos nas diversas áreas/departamentos aumentando a eficiência com que atingem os seus objetivos",
                 "resumeProfItem1Desc6": "Suporte de IT e Gestão Utilizadores"

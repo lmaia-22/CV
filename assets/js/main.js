@@ -478,7 +478,7 @@ tsParticles.load("tsparticles", {
 var language; 
   function getLanguage() {
       $.ajax({ 
-        url:  '/CV/language/' +  localStorage.getItem('language') + '.json', 
+        url:  '/language/' +  localStorage.getItem('language') + '.json', 
         dataType: 'json', async: false, dataType: 'json', 
         success: function (lang) { language = lang } });
 
@@ -556,6 +556,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById("resumeTitle").textContent = language.resume.resumeTitle;
     document.getElementById("resumeTitle0").textContent = language.resume.resumeTitle0;
     document.getElementById("resumeTitle1").textContent = language.resume.resumeTitle1;
+    document.getElementById("pdfDownload").href = language.resume.pdfDownload;
+    document.getElementById("pdfDownload").textContent = language.resume.pdfDownloadText;
     document.getElementById("resumeSummary").textContent = language.resume.resumeSummary;
     document.getElementById("resumeTitle2").textContent = language.resume.resumeTitle2;
     document.getElementById("resumeEduItem1Title").textContent = language.resume.resumeEduItem1.resumeEduItem1Title;
