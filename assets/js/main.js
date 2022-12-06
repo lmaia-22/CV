@@ -478,7 +478,7 @@ tsParticles.load("tsparticles", {
 var language; 
   function getLanguage() {
       $.ajax({ 
-        url:  'CV/language/' +  localStorage.getItem('language') + '.json', 
+        url:  '/CV/language/' +  localStorage.getItem('language') + '.json', 
         dataType: 'json', async: false, dataType: 'json', 
         success: function (lang) { language = lang } });
 
