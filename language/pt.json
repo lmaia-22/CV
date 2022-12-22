@@ -60,7 +60,7 @@
     "resume":{
         "resumeTitle": "Currículo",
         "resumeTitle0": "Descubra o meu currículo",
-        "pdfDownload": "/assets/docs/cv_Luis_Maia_PT.pdf",
+        "pdfDownload": "https://lmaia-22.github.io/CV/assets/docs/cv_Luis_Maia_PT.pdf",
         "pdfDownloadText": "Faz download do meu CV",
         "resumeTitle1": "Sumário",
         "resumeSummary": "Sou um programador Web inovador, com mais de 4 anos de experiência desenhando e desenvolvendo sistemas orientados ao utilizador final. Extremamente motivado para melhorar constantemente as minhas competências e crescer profissionalmente. Estou confiante nas minhas capacidades para criar e desenvolver as funcionalidades/ferramentas que permitam o crescimento rápido da solução.",

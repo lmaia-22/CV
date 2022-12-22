@@ -61,7 +61,7 @@
     "resume":{
         "resumeTitle": "Resume",
         "resumeTitle0": "Check My Resume",
-        "pdfDownload": "/assets/docs/cv_Luis_Maia_EN.pdf",
+        "pdfDownload": "https://lmaia-22.github.io/CV/assets/docs/cv_Luis_Maia_EN.pdf",
         "pdfDownloadText": "Download my Resume",
         "resumeTitle1": "Summary",
         "resumeSummary": "I belive to be a innovative and deadline-driven Web developer with more then 4 years of experience designing and developing user-oriented systems. I see myself as a motivated self-start, able to spark interest and take initiative in facilitate and help others with their recurrent tasks. I'm a creative and out-of-the-box thinker, being able to see beyond 'todays needs'",
