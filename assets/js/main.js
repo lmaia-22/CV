@@ -606,6 +606,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById("resumeProfItem2Desc1").textContent = language.resume.resumeProfItem2.resumeProfItem2Desc.resumeProfItem2Desc1;
     document.getElementById("resumeProfItem2Desc2").textContent = language.resume.resumeProfItem2.resumeProfItem2Desc.resumeProfItem2Desc2;
     document.getElementById("resumeProfItem2Desc3").textContent = language.resume.resumeProfItem2.resumeProfItem2Desc.resumeProfItem2Desc3;
+    document.getElementById("resumeProfItem3Title").textContent = language.resume.resumeProfItem3.resumeProfItem3Title;
+    document.getElementById("resumeProfItem3Date").textContent = language.resume.resumeProfItem3.resumeProfItem3Date;
+    document.getElementById("resumeProfItem3Local").textContent = language.resume.resumeProfItem3.resumeProfItem3Local;
+    document.getElementById("resumeProfItem3Desc1").textContent = language.resume.resumeProfItem3.resumeProfItem3Desc.resumeProfItem3Desc1;
+    document.getElementById("resumeProfItem3Desc2").textContent = language.resume.resumeProfItem3.resumeProfItem3Desc.resumeProfItem3Desc2;
+    document.getElementById("resumeProfItem3Desc3").textContent = language.resume.resumeProfItem3.resumeProfItem3Desc.resumeProfItem3Desc3;
 
     //services
     document.getElementById("servicesTitle").textContent = language.services.servicesTitle;
