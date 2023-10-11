@@ -17,7 +17,7 @@
     "about":{
         "aboutTitle1": "About",
         "aboutTitle2": "Learn more about me",
-        "aboutText1": "Hi, my name is Luis, I'm from Portugal and I specialize in searching/designing and building, simple but effective systems. This systems normally are user-oriented wich means that the ideas between developers and the end-user aren't always aligned. But both parties have to make an effort. Regarding myself I think of me as a good guideleaner and a motivation driven person in a professiional level. In a more personal level I believe to be a good comunicator and advisor with good taste in cars and a good padel player as well. Please feel free to get in touch or take a look at my past work ont the portfolio section.",
+        "aboutText1": "I'm Luis Maia from Portugal, currently working as a Front-End Developer at MediaProbe. I specialize in crafting straightforward, yet highly efficient coding solutions with a keen emphasis on user requirements. I have a knack for bridging the gap between frontend and backend developers through my guidance and motivation. On a personal level, I'm a proficient communicator and advisor, with a passion for cars and paddle tennis. Feel free to peruse my portfolio and don't hesitate to reach out.",
         "birthday": "Birthday:",
         "birthdayValue": "22 April 1997",
         "website": "Website:",
@@ -34,7 +34,7 @@
         "email1Value":"luismsm14@gmail.com",
         "freelance": "Freelance:",
         "freelanceValue": "Available",
-        "aboutText2": "A little more about me, I love automation since I found out I was bit lazy. But being lazy has it's perks, it force us to find ways to make life easier for ourselves as well as others, David Dunham says that \"Efficiency is intelligent laziness\" and I couldn't agree more.So I began my studies in Higher Institute of Engineering in Porto (ISEP) in 2015 taking the course of Systems Engineering for three years. In 2018 I began my internship in Fundação Casa da Música as a Information Systems Technician where I worked with a great variety of tools, such as SQL, PHP, HTML, CSS, Javascript, Sharepoint, Dynamics Nav, EDOC, wich allowed my to learn new skills and most important, on how to comunicate with our clients (work colleagues). For that reason, I began to have interest in Searching/Designing and building solutions, in this case web applications that would make the work 'easier' through analysis of processes and finding points of improvement, sometimes the smallest change can cause the biggest impact.",
+        "aboutText2": "A little more about me, I love automation since I found out I was bit lazy. But being lazy has it's perks, it force us to find ways to make life easier for ourselves as well as others, David Dunham says that \"Efficiency is intelligent laziness\" and I couldn't agree more. So I began my studies in Higher Institute of Engineering in Porto (ISEP) in 2015 taking the course of Systems Engineering for three years. In 2018 I began my internship in Fundação Casa da Música as a Information Systems Technician where I worked with a great variety of tools, wich allowed my to learn new skills and most important, on how to comunicate with our clients (work colleagues). For that reason, I began to have interest in Searching/Designing and building solutions, in this case web applications that would make the work 'easier' through analysis of processes and finding points of improvement, sometimes the smallest change can cause the biggest impact.",
         "counts":{
             "countProcess": "Processes Improved",
             "countProjects": "Projects",
@@ -50,7 +50,7 @@
             "interest4": "Breakdown processes",
             "interest5": "Learning new things",
             "interest6": "Building Computers",
-            "interest7": "NFT's",
+            "interest7": "ETF's",
             "interest8": "Robotic",
             "interest9": "Padel",
             "interest10": "Formula 1",
@@ -64,7 +64,7 @@
         "pdfDownload": "https://lmaia-22.github.io/CV/assets/docs/cv_Luis_Maia_EN.pdf",
         "pdfDownloadText": "Download my Resume",
         "resumeTitle1": "Summary",
-        "resumeSummary": "I belive to be a innovative and deadline-driven Web developer with more then 4 years of experience designing and developing user-oriented systems. I see myself as a motivated self-start, able to spark interest and take initiative in facilitate and help others with their recurrent tasks. I'm a creative and out-of-the-box thinker, being able to see beyond 'todays needs'",
+        "resumeSummary": "I believe I am an innovative and deadline-driven web developer with over four years of experience in designing and developing user-oriented systems. I see myself as a motivated self-starter, capable of sparking interest and taking initiative to facilitate and assist others with their recurring tasks. I'm a creative and out-of-the-box thinker, able to envision solutions beyond today's immediate needs.",
         "resumeTitle2": "Education",
         "resumeEduItem1":{
             "resumeEduItem1Title": "Degree in Computer Science and engineering",
@@ -93,7 +93,7 @@
         "resumeTitle3": "Professional Experience",
         "resumeProfItem1":{
             "resumeProfItem1Title": "Information Systems Technician",
-            "resumeProfItem1Date": "2019 - Present",
+            "resumeProfItem1Date": "2019 - March 2023",
             "resumeProfItem1Local": "Fundação Casa da Música, Porto, Portugal",
             "resumeProfItem1Desc": {
                 "resumeProfItem1Desc1": "Helpdesk service to more then 200 people",
@@ -112,6 +112,16 @@
                 "resumeProfItem2Desc1": "Replace an XML file creation program for cataloging elements multimedia, written in Visual Basic, by a web form, written in HTML, Javascript, CSS and PHP language.",
                 "resumeProfItem2Desc2": "Assessment and validation of new Application built for Casa da Musica restaurant.",
                 "resumeProfItem2Desc3": "Create a dynamic php page based on information from Current and next events to happen in Casa da Música, to be displayed on the Digital Signage system that Casa da Música is implementing."
+            }
+        },
+        "resumeProfItem3":{
+            "resumeProfItem3Title": "Front-End Developer",
+            "resumeProfItem3Date": "2023 - Present",
+            "resumeProfItem3Local": "MediaProbe, Porto, Portugal",
+            "resumeProfItem3Desc": {
+                "resumeProfItem3Desc1": "Working on multiple projects with Angular",
+                "resumeProfItem3Desc2": "Building some new endpoints in typescript",
+                "resumeProfItem3Desc3": "Improve application navagability"
             }
         }
     },

@@ -49,7 +49,7 @@
             "interest4": "Desenhar Processos",
             "interest5": "Aprender novas tecnologias",
             "interest6": "Cosntruir Computadores",
-            "interest7": "NFT's",
+            "interest7": "ETF's",
             "interest8": "Robótica",
             "interest9": "Padel",
             "interest10": "Formula 1",
@@ -111,6 +111,16 @@
                 "resumeProfItem2Desc1": "Criação de uma aplicação WEB para catalogação de elementos multimídia, desenvolvido HTML, Javascript, CSS e PHP.",
                 "resumeProfItem2Desc2": "Avaliação e validação da nova Aplicação construída para o Restaurante Casa da Música.",
                 "resumeProfItem2Desc3": "Desenvolvimento de uma aplicação WEB em php que apresenta a informação dos eventos a decorrer e próximos, para serem apresentada no sistema de Digital Signage já implementado."
+            }
+        },
+        "resumeProfItem3":{
+            "resumeProfItem3Title": "Front-End Developer",
+            "resumeProfItem3Date": "2023 - Present",
+            "resumeProfItem3Local": "MediaProbe, Porto, Portugal",
+            "resumeProfItem3Desc": {
+                "resumeProfItem3Desc1": "Desenvolver vários projetos em Angular",
+                "resumeProfItem3Desc2": "Construir novos endpoints para serem consumidos pelo frontend",
+                "resumeProfItem3Desc3": "Melhoramento da navegabilidade das aplicações"
             }
         }
     },

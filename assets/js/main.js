@@ -476,19 +476,33 @@ tsParticles.load("tsparticles", {
 
 
 var language; 
-  function getLanguage() {
-      $.ajax({ 
-        url:  '/CV/language/' +  localStorage.getItem('language') + '.json', 
-        dataType: 'json', async: false, dataType: 'json', 
-        success: function (lang) { language = lang } });
+function getLanguage() {
+  // Attempt to load the language file from the first URL
 
-        if(language == null){
-          $.ajax({ 
-            url:  'CV/language/' +  localStorage.getItem('language') + '.json', 
-            dataType: 'json', async: false, dataType: 'json', 
-            success: function (lang) { language = lang } });
-        }
+    $.ajax({ 
+      url: 'language/' + localStorage.getItem('language') + '.json', 
+      dataType: 'json', 
+      async: false,
+      success: function (lang) { language = lang }
+    });
+  if (language == null) {
+  $.ajax({ 
+    url: '/CV/language/' + localStorage.getItem('language') + '.json', 
+    dataType: 'json', 
+    async: false,
+    success: function (lang) { language = lang }
+  });
   }
+  // If the language file wasn't found at the first URL, try a different URL
+  if (language == null) {
+    $.ajax({ 
+      url: 'CV/language/' + localStorage.getItem('language') + '.json', 
+      dataType: 'json', 
+      async: false,
+      success: function (lang) { language = lang }
+    });
+  }
+}
   function setLanguage(lang) {
     localStorage.setItem('language', lang);
 }

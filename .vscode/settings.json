@@ -1,3 +1,8 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "CV"
+    "liveServer.settings.multiRootWorkspaceName": "CV",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#173232",
+        "titleBar.activeBackground": "#214646",
+        "titleBar.activeForeground": "#F7FBFB"
+    }
 }
